@@ -1,4 +1,4 @@
-# Consumindo uma api externa
+# Consumindo uma API externa
 
  Desenvolvi um back-end em PHP que consome uma API externa. 
  
