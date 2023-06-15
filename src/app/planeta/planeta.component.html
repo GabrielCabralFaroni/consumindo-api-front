@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planetas</title>
+</head>
+<body>
+  
+  <h4>Planetas de Star Wars</h4>
+  
+  <div class="planet-container">
+    <ng-container *ngFor="let arrayPlanetas of [planetas]; let i = index">
+      <div *ngFor="let planeta of arrayPlanetas" class="planet-card" [ngClass]="'array-' + i">
+        <h1>{{ planeta.nome }}</h1>
+        <h2>Rotação: {{ planeta.rotacao }}</h2>
+        <h2>Período Orbital: {{ planeta.orbitalPeriodo }}</h2>
+        <h2>Diâmetro: {{ planeta.diametro }} km</h2>
+        <h2>Clima: {{ planeta.clima }}</h2>
+        <h2>Gravidade: {{ planeta.gravidade }}</h2>
+        <h2>Terreno: {{ planeta.terreno }}</h2>
+      </div>
+    </ng-container>
+  </div>
+
+</body>
+</html>
